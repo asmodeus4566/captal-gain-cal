@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Gains Calculator</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <h1>Capital Gains Calculator</h1>
+            <p class="subtitle">Calculate your investment tax liability</p>
+            
+            <div class="input-group">
+                <label for="amount-invested">Amount Invested (₹)</label>
+                <input type="number" id="amount-invested" placeholder="Enter purchase amount">
+            </div>
+            
+            <div class="input-group">
+                <label for="amount-received">Amount Received (₹)</label>
+                <input type="number" id="amount-received" placeholder="Enter sale amount">
+            </div>
+            
+            <div class="input-group">
+                <label for="time-invested">Time Invested (years)</label>
+                <input type="number" id="time-invested" placeholder="Enter investment duration" step="0.1">
+            </div>
+            
+            <button id="calculate-btn">Calculate</button>
+            
+            <div class="result-section" id="result-container">
+                <h2>Results</h2>
+                <div class="result-row">
+                    <span>Total Gain:</span>
+                    <span id="total-gain">-</span>
+                </div>
+                <div class="result-row">
+                    <span>Capital Gains Tax:</span>
+                    <span id="capital-gains">-</span>
+                </div>
+                <div class="result-row">
+                    <span>Net Profit:</span>
+                    <span id="net-profit">-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="view.js"></script>
+</body>
+</html>
